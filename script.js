@@ -20,7 +20,7 @@ h3.style.color = "black";
 main.prepend(h3);
 
 btn.onclick = function () {
-  window.location.href = "/index.html";
+  window.location.href = "/tv-shows-vanilla/";
 };
 
 input.addEventListener("keyup", function () {
