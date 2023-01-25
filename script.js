@@ -27,7 +27,7 @@ input.addEventListener("keyup", function () {
   const searchValue = this.value.toLowerCase();
   if (searchValue.length === 0) {
     document.querySelector("main").innerHTML = ""
-    fetch("http://api.tvmaze.com/shows").then((res) =>
+    fetch("https://api.tvmaze.com/shows").then((res) =>
       res
         .json()
         .then((res) =>
@@ -55,7 +55,7 @@ input.addEventListener("keyup", function () {
 
 
 
-fetch("http://api.tvmaze.com/shows").then((res) =>
+fetch("https://api.tvmaze.com/shows").then((res) =>
   res
     .json()
     .then((res) =>
@@ -145,7 +145,7 @@ function renderCast(res) {
 }
 
 function fetchSeasons(id) {
-  fetch(`http://api.tvmaze.com/shows/${id}/seasons`)
+  fetch(`https://api.tvmaze.com/shows/${id}/seasons`)
     .then((res) => res.json())
     .then((res) => {
       let counter = 0;
